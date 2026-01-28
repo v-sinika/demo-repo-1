@@ -12,13 +12,13 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
       
       - name: Custom checkout with org settings
-        uses: v-sinika/demo-custom-actions/actions/checkout@v1
+        uses: v-sinika/demo-custom-actions/actions/checkout@7d0c4ac46067a6fe434eb494f5ad1464c3ad25a9 # main, commit date 2026-01-16
       
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
         with:
           node-version: '20'
           cache: 'npm'
